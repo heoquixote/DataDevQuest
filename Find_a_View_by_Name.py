@@ -15,7 +15,7 @@ def main():
 
     # Step 2: Tableau Server Authentication
     try:
-        tableau_auth = TSC.TableauAuth(tableau_username, tableau_password, None)
+        tableau_auth = TSC.TableauAuth(tableau_username, tableau_password)
         server = TSC.Server(tableau_server)
         server.use_server_version()
         print("Authenticating with Tableau Server...")
